@@ -1,0 +1,9 @@
+.editable {
+    border: 0px; /* Default border color */
+    transition: border-color 0.3s ease; /* Smooth transition for border color change */
+}
+
+.editable:focus {
+    border: 2px solid #198754; /* Default border color */
+    outline: none; /* Remove the default focus outline (optional) */
+}

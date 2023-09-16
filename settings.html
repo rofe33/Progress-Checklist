@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US" data-bs-theme="light">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Settings | Progress Checklist</title>
+
+    <!--   ___       ____  _______     __ -->
+    <!--  / _ \__  _|  _ \|___ /\ \   / / -->
+    <!-- | | | \ \/ / |_) | |_ \ \ \ / /  -->
+    <!-- | |_| |>  <|  _ < ___) | \ V /   -->
+    <!--  \___//_/\_\_| \_\____/   \_/    -->
+
+    <!-- Linking CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom-checkbox.css">
+
+    <!-- Theme Script -->
+    <script src="js/persist-theme.js"></script>
+  </head>
+  <body>
+    <header class="navbar m-3 navbar-expand-lg sticky-top bg-body-secondary rounded">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <svg width="32" height="32" version="1.1" viewBox="0 0 8.4667 8.4667" xmlns="http://www.w3.org/2000/svg" class="d-inline-block text-align-center">
+            <g stroke-linecap="round" stroke-linejoin="round">
+              <g stroke-width=".54013">
+                <path d="m2.9133 2.9989h0.12641c0.11157 0 0.20139 0.093572 0.20139 0.2098v0.1317c0 0.11623-0.089818 0.2098-0.20139 0.2098h-0.12641c-0.11157 0-0.20139-0.093572-0.20139-0.2098v-0.1317c0-0.11623 0.089818-0.2098 0.20139-0.2098z" fill="#198754"/>
+                <path d="m4.104 2.9989h1.4494c0.11157 0 0.20139 0.067716 0.20139 0.15183v0.24764c0 0.084114-0.089818 0.15183-0.20139 0.15183h-1.4494c-0.11157 0-0.20139-0.067716-0.20139-0.15183v-0.24764c0-0.084114 0.089819-0.15183 0.20139-0.15183z" fill="#8a8a8a"/>
+                <path d="m2.9133 3.9577h0.12641c0.11157 0 0.20139 0.093572 0.20139 0.2098v0.1317c0 0.11623-0.089818 0.2098-0.20139 0.2098h-0.12641c-0.11157 0-0.20139-0.093572-0.20139-0.2098v-0.1317c0-0.11623 0.089819-0.2098 0.20139-0.2098z" fill="#198754"/>
+                <path d="m4.104 3.9577h1.4494c0.11157 0 0.20139 0.067716 0.20139 0.15183v0.24764c0 0.084114-0.089818 0.15183-0.20139 0.15183h-1.4494c-0.11157 0-0.20139-0.067716-0.20139-0.15183v-0.24764c0-0.084113 0.089819-0.15183 0.20139-0.15183z" fill="#8a8a8a"/>
+                <path d="m2.9133 4.9165h0.12641c0.11157 0 0.20139 0.093572 0.20139 0.2098v0.1317c0 0.11623-0.089819 0.2098-0.20139 0.2098h-0.12641c-0.11157 0-0.20139-0.093572-0.20139-0.2098v-0.1317c0-0.11623 0.089818-0.2098 0.20139-0.2098z" fill="#198754"/>
+                <path d="m4.104 4.9165h1.4494c0.11157 0 0.20139 0.067716 0.20139 0.15183v0.24764c0 0.084114-0.089819 0.15183-0.20139 0.15183h-1.4494c-0.11157 0-0.20139-0.067716-0.20139-0.15183v-0.24764c0-0.084114 0.089819-0.15183 0.20139-0.15183z" fill="#8a8a8a"/>
+              </g>
+              <path d="m5.32 0.4834h1.0867c0.10955 0 0.19774 0.10281 0.19774 0.23052v7.2359c0 0.12771-0.088192 0.23052-0.19774 0.23052h-4.3467c-0.10955 0-0.19774-0.10281-0.19774-0.23052v-7.2359c0-0.12771 0.088193-0.23052 0.19774-0.23052h1.0867" fill="none" stroke="currentColor" stroke-width=".5"/>
+              <path d="m3.3763 5.3989e-5h1.714c0.11157 0 0.20139 0.067716 0.20139 0.15183v0.79894c0 0.084114-0.089819 0.15183-0.20139 0.15183h-1.714c-0.11157 0-0.20139-0.067716-0.20139-0.15183v-0.79894c0-0.084114 0.089819-0.15183 0.20139-0.15183z" fill="#8a8a8a" stroke-width=".54013"/>
+              <path d="m3.9055 0.82701h0.6556c0.11157 0 0.20139 0.067716 0.20139 0.15183v0.24764c0 0.084114-0.089819 0.15183-0.20139 0.15183h-0.6556c-0.11157 0-0.20139-0.067716-0.20139-0.15183v-0.24764c0-0.084113 0.089818-0.15183 0.20139-0.15183z" fill="#d7b52c" stroke-width=".54013"/>
+            </g>
+          </svg>
+          Progress Checklist
+        </a>
+
+        <ul class="nav">
+          <li class="nav-item">
+            <button type="button" class="btn" onclick="changeTheme()">
+              <svg width="32" height="32" version="1.1" viewBox="0 0 8.4667 8.4667" xmlns="http://www.w3.org/2000/svg">
+                <title>Themes</title>
+                <g transform="translate(-.0092385 -.0096828)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m7.6844 2.4996c0.70741 1.4448 0.47479 3.1734-0.58928 4.3799-1.0642 1.2065-2.7502 1.6531-4.272 1.1317-1.5219-0.52144-2.5797-1.9083-2.6804-3.5138-0.10063-1.6055 0.77577-3.1136 2.2206-3.821 1.9728-0.96593 4.3552-0.14966 5.3211 1.8232z" stroke-dasharray="4.1729, 4.1729" stroke-width=".52162" style="paint-order:normal"/>
+                  <path d="m5.2597 2.7206c0.61575 0.41144 0.92304 1.1533 0.77858 1.8796-0.14449 0.72633-0.71226 1.2941-1.4386 1.4386-0.72633 0.14446-1.4682-0.16284-1.8796-0.7786-0.41143-0.61576-0.41137-1.4187 7.17e-5 -2.0345 0.26979-0.40376 0.68893-0.68381 1.1652-0.77852 0.47628-0.094725 0.97068 0.00363 1.3744 0.27339z" stroke-linecap="round" stroke-linejoin="bevel" stroke-width=".39121" style="paint-order:normal"/>
+                  <path d="m3.7302 7.3828c-1.2693-0.20724-2.2888-1.1587-2.5831-2.4107-0.2943-1.252 0.19455-2.558 1.2386-3.309 1.0441-0.75102 2.4377-0.79911 3.5312-0.12196 1.0934 0.67721 1.6712 1.9464 1.464 3.2156-0.13588 0.83233-0.59683 1.5766-1.2814 2.069-0.68462 0.49247-1.5369 0.69283-2.3692 0.55694z" stroke-dasharray="2.34727, 2.34727" stroke-width=".39121" style="paint-order:normal"/>
+                  <path d="m2.2053 2.9408c0.54353-0.8094 1.5211-1.2117 2.4769-1.0193 0.95579 0.19241 1.7015 0.94161 1.8895 1.8983 0.18798 0.95666-0.21878 1.9324-1.0307 2.4722-0.8119 0.53979-1.869 0.53739-2.6784-0.0061302-0.53074-0.3564-0.8982-0.90906-1.0214-1.5363-0.12322-0.62727 0.0077036-1.2779 0.36408-1.8086z" stroke-dasharray="1.56483, 1.56483" stroke-width=".26081" style="paint-order:normal"/>
+                </g>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="card m-3">
+      <div class="card-header text-secondary text-center">
+        <h4>
+          <strong>
+            Theme Settings
+          </strong>
+        </h4>
+      </div>
+      <div class="card-body">
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="theme-switcher">
+          <label class="form-check-label" for="theme-switcher">Toggle Dark Mode</label>
+        </div>
+      </div>
+      <div class="card-footer text-body-secondary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-inline-block">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M12 16v-4"/>
+          <path d="M12 8h.01"/>
+        </svg>
+        <div class="d-inline-block align-text-top">
+          <strong>
+            Enable or disable dark/light theme for the whole website.
+          </strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="card m-3">
+      <div class="card-header text-secondary text-center">
+        <h4>
+          <strong>
+            Import/Export/Reset Settings
+          </strong>
+        </h4>
+      </div>
+      <div class="card-body text-center">
+        <button type="button" class="btn btn-warning text-white" id="import-btn"><strong>Import</strong></button>
+        <button type="button" class="btn btn-success" id="export-btn"><strong>Export</strong></button>
+        <button type="button" class="btn btn-danger" id="reset-btn"><strong>Reset</strong></button>
+      </div>
+      <div class="card-footer text-body-secondary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-inline-block text-warning">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M12 16v-4"/>
+          <path d="M12 8h.01"/>
+        </svg>
+        <div class="d-inline-block align-text-top text-warning">
+          <strong>
+            Import another checklist from backup file (it will DELETE currently available data).
+          </strong>
+        </div>
+        <br>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-inline-block text-success">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M12 16v-4"/>
+          <path d="M12 8h.01"/>
+        </svg>
+        <div class="d-inline-block align-text-top text-success">
+          <strong>
+            Export current checklists for later import.
+          </strong>
+        </div>
+        <br>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-inline-block text-danger">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M12 16v-4"/>
+          <path d="M12 8h.01"/>
+        </svg>
+        <div class="d-inline-block align-text-top text-danger">
+          <strong>
+            DELETE all saved checklists.
+          </strong>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <!-- Linking JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/theme-changer.js"></script>
+    <script src="js/export.js"></script>
+    <script src="js/import.js"></script>
+    <script src="js/reset.js"></script>
+  </body>
+</html>

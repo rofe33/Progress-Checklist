@@ -1,0 +1,18 @@
+/* Change the color of the checkboxes in index.html */
+.form-check-input:checked {
+  background-color: #198754;
+  border-color: #198754;
+}
+
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+}
+
+/* Change the color of the switches in settings.html */
+.form-switch .form-check-input:focus {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='rgba(40, 167, 69, 0.5)'/></svg>");
+}
+
+.form-switch .form-check-input:checked {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='white'/></svg>");
+}
