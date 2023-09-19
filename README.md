@@ -1,6 +1,6 @@
 # Progress Checklist v0.1.0
 
-A Progress Checklist, to structure todos and tasks for each each version of your project.
+A Progress Checklist, to structure todos and tasks for each version of your project.
 
 ## Screenshots
 
